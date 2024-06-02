@@ -1,6 +1,5 @@
 joblib
 scikit-learn
-streamlit
 pickle
 pandas
 plotly
