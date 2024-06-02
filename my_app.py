@@ -5,7 +5,7 @@ import numpy as np
 import joblib
 import sklearn
 
-model=joblib.load('model_gender')
+model=joblib.load('model_gender1')
 
 st.title('income prediction')
 
