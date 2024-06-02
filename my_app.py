@@ -51,7 +51,9 @@ def predict():
         prediction_placeholder.success('Income probability: <50k')
     else:
         prediction_placeholder.error('Income probability: >50k')
-   
+    import time
+    time.sleep(15)
+    
 
 
 trigger = st.button('Predict', on_click=predict)
