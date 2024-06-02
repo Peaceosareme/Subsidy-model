@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 
 import numpy as np
+import joblib
+import sklearn
 
 model=joblib.load('model_gender')
 
