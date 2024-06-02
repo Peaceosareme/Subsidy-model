@@ -7,7 +7,7 @@ import sklearn
 
 model=joblib.load('model_gender1')
 
-st.title('income prediction')
+st.title('Monthly Income Prediction')
 
 Age=st.number_input('Age',0,150)
 
