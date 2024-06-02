@@ -40,14 +40,19 @@ else:
     Education=2
 
 columns=['Age','Gender','Own a car or truck','health insurance','Education']
-def predict(): 
-    row = np.array([Age,Gender, car, insurance, Education]) 
-    X = pd.DataFrame([row], columns = columns)
+
+prediction_placeholder = st.empty()
+def predict():
+    row = np.array([Age, Gender, car, insurance, Education])
+    X = pd.DataFrame([row], columns=columns)
     prediction = model.predict(X)[0]
 
-    if prediction== 0: 
-        st.success('Income probability: <50k')
-    else: 
-        st.error('Income probability: >50k') 
+    if prediction == 0:
+        prediction_placeholder.success('Income probability: <50k')
+    else:
+        prediction_placeholder.error('Income probability: >50k')
+    import time
+    time.sleep(15)
+
 
 trigger = st.button('Predict', on_click=predict)
