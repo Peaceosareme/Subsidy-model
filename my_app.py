@@ -26,9 +26,9 @@ else:
 
 insurance=st.selectbox('health insurance',[' ','Yes','No'])
 if insurance=='Yes':
-    insurance =1
+    insurance =0
 else:
-    insurance=0
+    insurance=1
 
 Education=st.selectbox('Education',[' ','Primary or less','Secondary', 'Higher'])
 
