@@ -43,7 +43,7 @@ columns=['Age','Gender','Own a car or truck','health insurance','Education']
 
 prediction_placeholder = st.empty()
 def predict():
-    if Age == 0 or Gender == '' or Car == '' or Insurance == '' or Education == '':
+    if Age == 0 or Gender == '' or car == '' or insurance == '' or Education == '':
         st.error('Please fill in all fields.')
     else:
         row = np.array([Age, Gender, car, insurance, Education])
