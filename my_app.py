@@ -45,16 +45,17 @@ prediction_placeholder = st.empty()
 def predict():
     if Age == 0 or Gender == '' or Car == '' or Insurance == '' or Education == '':
         st.error('Please fill in all fields.')
-    row = np.array([Age, Gender, car, insurance, Education])
-    X = pd.DataFrame([row], columns=columns)
-    prediction = model.predict(X)[0]
-
-    if prediction == 0:
-        prediction_placeholder.success('Income probability: <50k')
     else:
-        prediction_placeholder.error('Income probability: >50k')
-    import time
-    time.sleep(15)
+        row = np.array([Age, Gender, car, insurance, Education])
+        X = pd.DataFrame([row], columns=columns)
+        prediction = model.predict(X)[0]
+
+        if prediction == 0:
+            prediction_placeholder.success('Income probability: <50k')
+        else:
+            prediction_placeholder.error('Income probability: >50k')
+        import time
+        time.sleep(15)
     
 
 
