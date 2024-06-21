@@ -3,3 +3,5 @@ scikit-learn
 pandas
 streamlit
 plotly
+mysqlclient
+SQLAlchemy
