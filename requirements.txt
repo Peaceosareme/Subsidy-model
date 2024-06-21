@@ -3,5 +3,3 @@ scikit-learn
 pandas
 streamlit
 plotly
-mysqlclient==8.0
-SQLAlchemy==1.2
