@@ -5,6 +5,7 @@ import joblib
 import sklearn
 
 model = joblib.load("model_gender1")
+st.title('IR Enrolment Tool')
 
 Name = st.text_input("Full name: ")
 
